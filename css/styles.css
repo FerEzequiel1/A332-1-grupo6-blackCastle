@@ -7,3 +7,64 @@ nav div a{
 nav div a:hover{
     color:#987554;
 }
+nav .menu a {
+    color: #001815;
+}
+nav .menu a:hover {
+    color: #fff;
+}
+body {
+    background-color: #987554;
+}
+header {
+    background-color: #001815;
+    color: #fff;
+}
+header h1, header h2 {
+    text-align: center;
+}
+footer {
+    background-color: #001815;
+    color: #fff;
+}
+.centrado {
+    text-align: center;
+    margin: 0 auto;
+}
+.centrado-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-sombra {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    transition: box-shadow 0.3s; 
+}
+
+.img-sombra:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.fa-facebook{
+    color: #fff;
+}
+.fa-pinterest{
+    color: #fff;
+}
+.fa-instagram{
+    color: #fff;
+}
+.fa-linkedin{
+    color: #fff;
+}
+.fa-facebook:hover{
+    color: #987554;
+}
+.fa-pinterest:hover{
+    color: #987554;
+}
+.fa-instagram:hover{
+    color: #987554;
+}
+.fa-linkedin:hover{
+    color: #987554;
+}
