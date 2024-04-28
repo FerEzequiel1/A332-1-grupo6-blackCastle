@@ -1,0 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
+nav div a{
+    color: white;
+}
+nav div a:hover{
+    color:#987554;
+}
