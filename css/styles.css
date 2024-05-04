@@ -99,7 +99,6 @@ footer {
     height: 100%;
     padding: 1rem;
     border: solid 15px #4a4f47;
-
 }
 .label-formulario{
     font-size: 1.5rem;
@@ -130,7 +129,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
 }
- .productos{
+.productos{
     border: 5px solid #000;
     border-radius: 1rem;
     background-color:rgb(209, 218, 237);
@@ -157,5 +156,4 @@ img {
     font-size: 1.5rem;
     margin-top: 1rem;
     text-decoration: underline;
-    
 }
