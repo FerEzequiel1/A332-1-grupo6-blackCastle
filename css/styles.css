@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -15,6 +20,10 @@ nav .menu a:hover {
 }
 body {
     background-color: #987554;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 header {
     background-color: #001815;
@@ -67,4 +76,86 @@ footer {
 }
 .fa-linkedin:hover{
     color: #987554;
+}
+
+
+/*contacto*/
+
+.formulario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    
+}
+.formulario-container{
+    background-color: rgb(119, 106, 106);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 2rem;
+    gap: 1rem;
+    height: 100%;
+    padding: 1rem;
+    border: solid 15px #4a4f47;
+
+}
+.label-formulario{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.input-formulario{
+    height: 2rem;
+    font-size: 1.05rem;
+}
+#mensaje{
+    resize: none;
+    font-size: 1.05rem;
+}
+.btn-enviar{
+    height: 2rem;
+}
+
+footer{
+    bottom: 0;
+    margin-top: 2rem;
+}
+
+
+/* productos*/
+.productos_container{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+ .productos{
+    border: 5px solid #000;
+    border-radius: 1rem;
+    background-color:rgb(209, 218, 237);
+    padding: 15px;
+    width: 380px;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.btn-comprar-productos{
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+.btn-comprar-productos:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+img {
+    max-height: 340px;
+    
+}
+.titulo-de-section{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+    
 }
