@@ -6,35 +6,45 @@
     <title>Black castle bar</title>
     <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
+    
 </head>
 
-<body>
+<body> 
     <header> 
-    
         <nav>  
-            <div> 
+            <div>
                 <a href="index.html">Home</a>
+                <a href="productos.html">Menu</a> 
+                <a href="about.html">Sobre nosotros</a>
             </div>
-            
         </nav>
-    
+        
         <h1>BLACK CASTLE</h1>
         <h2>El mejor bar de la Argentina</h2> 
-    
         <br> 
     </header>
 
-    <h2>Esta es nuestra primera pagina web!</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, quam perferendis? Eius, aut quibusdam harum cum tempora numquam asperiores similique debitis. Nisi totam natus repellat sint necessitatibus illo veritatis sapiente.</p>
-        <img src="imagenes/279602150_713522553104595_1754486956360813506_n.jpg" alt="foto del bar" width="600">
-        <br>
+    <form class="formulario" action="#"  >
+        <div class="formulario-container">
 
-
-    <footer > <!--style="background-color: chocolate;" -->
+            <label class="label-formulario" for="nombre">Nombre:</label>
+            <input class="input-formulario" type="text" id="nombre" name="nombre" required>
         
+            <label class="label-formulario" for="email">Email:</label>
+            <input class="input-formulario" type="email" id="email" name="email" required>
+        
+            <label class="label-formulario" for="telefono">Teléfono:</label>
+            <input class="input-formulario" type="tel" id="telefono" name="telefono" required>
+        
+            <label class="label-formulario" for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        
+            <input class="btn-enviar" type="submit" value="Enviar">
+        </div>
+    </form>
+    <footer class="footer-contacto">
         <p>todos los derechos reservados 2024</p>
-            
-        </a> 
+        
     </a> 
     <a href="https://www.facebook.com" target="_blank">
     <i class="fa fa-facebook" aria-hidden="true"></i>
