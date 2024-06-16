@@ -10,7 +10,9 @@
 </head>
 
 <body> 
-    <header> 
+    <header class="header">
+        <div class="header-imagen"></div> <!-- Contenedor de la imagen de fondo -->
+        <div class="header-contenido"> </div>
         <nav>  
             <div>
                 <a href="about.html">Sobre nosotros</a>
@@ -28,7 +30,6 @@
     
     <br> 
     
-    <img src="./imagenes/279602150_713522553104595_1754486956360813506_n.jpg" alt="foto del bar" width="600" class="centrado-img">
     <nav class="centrado">   
         <br><br>
         <a href="productos.html#cervezas"> <img src="./imagenes/cervezas.jpg" alt="Cervezas" title="Cervezas" width="200" class="img-sombra"> </a>     &nbsp;&nbsp;<!-- separacion -->
@@ -36,12 +37,12 @@
         <a href="productos.html#tragos"> <img src="./imagenes/tragos.jpg" alt="Tragos" title="Tragos" width="200" height="180" class="img-sombra"></a>     &nbsp;&nbsp;<!-- separacion -->
         <a href="productos.html#comidas"> <img src="./imagenes/comidas.jpg" alt="Comidas" title="Comidas" width="200" height="180" class="img-sombra"></a>
     </nav>
+    
     <br>
     <nav class="centrado"> 
-        <div class="menu">
-            <a href="productos.html#cervezas">VER MENU COMPLETO</a> 
-        </div>
+        <a href="productos.html" class="btn-verProductos img-sombra">VER MENU COMPLETO</a>
     </nav>
+
     <br><br>
     
     <hr>
@@ -49,7 +50,7 @@
     <h3>Para reservar un turno:</h3>
     <p>Ingresa tu nombre, la cantidad de personas y el día en que quieres reservar una mesa.</p>
     <br>
-    <form>
+    <form class = "form">
         <input type="text" placeholder="escribe tu nombre" required>
         <input type="number" min="1" max="8" value="1" required>
         <input type="datetime-local" required>
@@ -57,7 +58,7 @@
     </form>
 
     
-    <section>
+    <section class = "section-calendar">
         <div>
             <!-- Google Calendar Appointment Scheduling begin -->
             <iframe
@@ -74,7 +75,7 @@
         <div>
             <h3>Ubicacion</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.27456470845!2d-58.51569895203946!3d-34.61579604878348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714270298663!5m2!1ses-419!2sar" 
-            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            width="100%" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
 

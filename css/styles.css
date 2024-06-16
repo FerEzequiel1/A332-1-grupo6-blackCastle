@@ -26,11 +26,44 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+
 }
+
 header {
-    background-color: #001815;
     color: #fff;
+    height: auto; /* Ajusta la altura según tus necesidades */
+    width: 100%;
+    position: relative; /* Para posicionar el div de la imagen */
+    ;
 }
+
+.header-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../imagenes/279602150_713522553104595_1754486956360813506_n.jpg') center/cover ; 
+    filter: brightness(50%); /* Ajusta el brillo para oscurecer la imagen */
+    z-index: -1; /* Coloca el div detrás del contenido del header */
+}
+
+.btn-verProductos {
+    background-color: #000; 
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.header-contenido {
+    position: relative;
+    z-index: 1;
+}
+
+
 header h1, header h2 {
     text-align: center;
 }
@@ -38,6 +71,8 @@ footer {
     background-color: #001815;
     color: #fff;
 }
+
+
 .centrado {
     text-align: center;
     margin: 0 auto;
@@ -46,15 +81,21 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 .img-sombra {
+    border-radius: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
     transition: box-shadow 0.3s; 
 }
-
 .img-sombra:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
+.section-calendar{
+    margin: 25px 50px 50px;
+}
+
 .fa-facebook{
     color: #fff;
 }
@@ -73,6 +114,7 @@ footer {
 .fa-twitter:hover{
     color: #987554;
 }
+
 
 
 /*contacto*/
@@ -132,7 +174,7 @@ footer{
     padding: 15px;
     width: 380px;
     margin-left: 1em;
-    display: flex;
+    display: block;
     flex-direction: column;
 }
 .btn-comprar-productos{
@@ -189,6 +231,7 @@ p
 
 form
 {
+    margin-bottom: 100px;
     background-color: #000;
     padding: 20px 0;
     max-width: 600px;
