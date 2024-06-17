@@ -198,12 +198,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
     height: auto;
 }
 .formulario-container{
     background-color: rgb(119, 106, 106);
     display: flex;
     flex-direction: column;
+    font-family: "Manrope";
+    border-radius: 5px;
     width: 450px;
     margin: 10px;
     margin-left: 20px;
@@ -220,13 +223,38 @@ footer {
 .input-formulario{
     height: 2rem;
     font-size: 1.05rem;
+    border-radius: 3px;
+    border: none;
 }
+.input-formulario:focus{
+    outline: none;
+}
+
 #mensaje{
     resize: none;
-    font-size: 1.05rem;
+   font-family: sans-serif;
+   border-radius: 5px;
+   padding: 10px;
+}
+#mensaje:focus{
+    outline: none;
+    padding: 10px;
+   
 }
 .btn-enviar{
-    height: 2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+.btn-enviar:hover{
+    background-color: #f6f6f6;
+    color: #000;
+    transition: all 0.5s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.759);
 }
 
 /* productos*/
