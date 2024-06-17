@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black castle bar</title>
+    <title >Black castle bar</title>
     <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
     
@@ -12,38 +13,31 @@
 <body> 
     <header class="header">
         <div class="header-imagen"></div> <!-- Contenedor de la imagen de fondo -->
-        <div class="header-contenido"> </div>
+
         <nav>  
-            <div>
-                <a href="about.html">Sobre nosotros</a>
-                <a href="#ubicacion">Ubicacion</a>
-                <a href="contacto.html">Contactanos</a>
-                <a href="login.html">crear cuenta</a>
+            <div class = "m-2">
+                <a href="index.html" class = "m-1 text-decoration-none">Home</a>
+                <a href="about.html" class = "m-1 text-decoration-none">Sobre nosotros</a>
+                <a href="#ubicacion"  class = "m-1 text-decoration-none">Ubicacion</a>
+                <a href="contacto.html" class = "m-1 text-decoration-none">Contactanos</a>
+                <a href="login.html" class = "m-1 text-decoration-none">Crear cuenta</a>
             </div>
         </nav>
-        
         <h1>BLACK CASTLE</h1>
-        <h2>El mejor bar de la Argentina</h2> 
-    
-        <br> 
+        <h2 class = "m-3">El mejor bar de la Argentina</h2> 
+
     </header>
     
-    <br> 
-    
-    <nav class="centrado">   
-        <br><br>
-        <a href="productos.html#cervezas"> <img src="./imagenes/cervezas.jpg" alt="Cervezas" title="Cervezas" width="200" class="img-sombra"> </a>     &nbsp;&nbsp;<!-- separacion -->
-        <a href="productos.html#vinos"> <img src="./imagenes/vinos.jpg" alt="Vinos" title="Vinos" width="200" class="img-sombra"></a>     &nbsp;&nbsp;<!-- separacion -->
-        <a href="productos.html#tragos"> <img src="./imagenes/tragos.jpg" alt="Tragos" title="Tragos" width="200" height="180" class="img-sombra"></a>     &nbsp;&nbsp;<!-- separacion -->
-        <a href="productos.html#comidas"> <img src="./imagenes/comidas.jpg" alt="Comidas" title="Comidas" width="200" height="180" class="img-sombra"></a>
-    </nav>
-    
-    <br>
-    <nav class="centrado"> 
-        <a href="productos.html" class="btn-verProductos img-sombra">VER MENU COMPLETO</a>
+    <nav class="centrado m-3">   
+        <a href="productos.html#cervezas" > <img src="./imagenes/cervezas.jpg" alt="Cervezas" title="Cervezas" width="200" class="img-sombra m-2"> </a>     &nbsp;&nbsp;<!-- separacion -->
+        <a href="productos.html#vinos" > <img src="./imagenes/vinos.jpg" alt="Vinos" title="Vinos" width="200" class="img-sombra m-2"></a>     &nbsp;&nbsp;<!-- separacion -->
+        <a href="productos.html#tragos" > <img src="./imagenes/tragos.jpg" alt="Tragos" title="Tragos" width="200" height="180" class="img-sombra m-2"></a>     &nbsp;&nbsp;<!-- separacion -->
+        <a href="productos.html#comidas" > <img src="./imagenes/comidas.jpg" alt="Comidas" title="Comidas" width="200" height="180" class="img-sombra m-2"></a>
     </nav>
 
-    <br><br>
+    <nav class="centrado pt-3 pb-3" alt ="botonMenu"> 
+        <a href="productos.html" class="btn-verProductos img-sombra">VER MENU COMPLETO</a>
+    </nav>
     
     <hr>
 
@@ -72,11 +66,10 @@
 
     <!-- UBICACION  -->
     <section id="ubicacion">
-        <div>
-            <h3>Ubicacion</h3>
+        <div >
+            <h3>UBICACION</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.27456470845!2d-58.51569895203946!3d-34.61579604878348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714270298663!5m2!1ses-419!2sar" 
             width="100%" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
         </div>
 
     </section>
@@ -99,7 +92,5 @@
         Contactate con nosotros en nuestras redes sociales!
     </footer>
 </body>
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
 </html>

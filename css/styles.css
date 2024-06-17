@@ -26,7 +26,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-
+    font-family: "times new roman";
 }
 
 header {
@@ -56,11 +56,6 @@ header {
     display: block;
     font-size: 20px;
     border-radius: 15px;
-}
-
-.header-contenido {
-    position: relative;
-    z-index: 1;
 }
 
 
@@ -120,23 +115,24 @@ footer {
 /*contacto*/
 
 .formulario{
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    
+    height: auto;
 }
 .formulario-container{
     background-color: rgb(119, 106, 106);
     display: flex;
     flex-direction: column;
-    width: 400px;
-    margin-top: 2rem;
+    width: 450px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     gap: 1rem;
     height: 100%;
     padding: 1rem;
-    border: solid 15px #4a4f47;
+    border: solid 10px #4a4f47;
 }
 .label-formulario{
     font-size: 1.5rem;
@@ -163,9 +159,9 @@ footer{
 /* productos*/
 .productos_container{
     margin-top: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .productos{
     border: 5px solid #000;
@@ -179,7 +175,7 @@ footer{
 }
 .btn-comprar-productos{
     border-radius: 10px;
-    height: 30px;
+    padding: 3px;
     cursor: pointer;
 }
 .btn-comprar-productos:hover {
@@ -245,12 +241,16 @@ form
     padding: 8px 20px;
 }
 
-@media screen and (min-width:481px) and (max-width:767px)
+@media screen and (max-width:767px)
 {
     .form_login
     {
-        height: 325px;
-        width: 500px;
+        height: auto;
+        width: 450px;
+    }
+    .formulario-container{
+        height: auto;
+        width: 350px;
     }
 }
 
@@ -258,16 +258,18 @@ form
 {
     .form_login
     {
-        height: 325px;
-        width: 800px;
+        height: auto;
+        width: 700px;
     }
+
 }
 
 @media screen and (min-width:1025px)
 {
     .form_login
     {
-        height: 325px;
-        width: 1025px;
+        height: auto;
+        width: 975px;
     }
+
 }
