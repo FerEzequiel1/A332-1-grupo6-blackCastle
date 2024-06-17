@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Manrope:wght@200&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,11 +8,36 @@ html
 {
     scroll-behavior: smooth;
 }
+
+/* estilos del navbar + bootstrap collapse component */
+
+nav{
+    font-size: 15px;
+    background-color: #001815;
+    font-family: "Manrope";
+    
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3e%3cpath stroke='rgba(255,255,255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Cambia el icono del toggler */
+}
+.navbar-toggler{
+    width: 20px;
+    border: none;
+}
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
 nav div a{
     color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 nav div a:hover{
-    color:#987554;
+    
+    background-color:#987554;
+    transition:all 0.5s;
 }
 nav .menu a {
     color: #001815;
@@ -26,7 +52,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    font-family: "times new roman";
+    
 }
 
 header {
@@ -127,7 +153,7 @@ footer {
   }
   
 .boton:hover{
-    transform: scale(1.1); /* Aumentar el tamaño en un 10% */
+    transform: scale(1.010); /* Aumentar el tamaño en un 10% */
   }
 
 .grid-container {
