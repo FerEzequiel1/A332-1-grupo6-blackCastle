@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Black castle bar</title>
     <link rel="icon" href="./imagenes/blackCastle.ico">
@@ -15,11 +16,31 @@
         <div class="header-imagen"></div> <!-- Contenedor de la imagen de fondo -->
         <div class="header-contenido"> </div>
     
-        <nav>  
+       <!--  <nav>  
             <div> 
                 <a href="index.html">Home</a>
             </div>
             
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg">
+            <div class=" container-fluid m-2 p-3 ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item m-2"><a href="index.html" class="m-1 text-decoration-none">Home</a></li>
+                        <li class="nav-item m-2"><a href="about.html" class="m-1 text-decoration-none">Sobre nosotros</a></li>
+                        <li class="nav-item m-2"><a href="index.html#ubicacion" class="m-1 text-decoration-none">Ubicacion</a></li>
+                        <li class="nav-item m-2"><a href="contacto.html" class="m-1 text-decoration-none">Contactanos</a></li>
+                        <li class="nav-item m-2"><a href="login.html" class="m-1 text-decoration-none">Crear cuenta</a></li>
+                    </ul>
+                </div>
+               
+            </div>
         </nav>
     
         <h1>BLACK CASTLE</h1>
