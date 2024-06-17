@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black castle bar</title>
-    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./imagenes/blackCastle.ico">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -25,10 +25,13 @@
         <h2>MENU</h2> 
         <br> 
     </header>
-    <menu >  
-        <section >
-            <h3 class="titulo-de-section">Cervezas</h3>
-            <div class="productos_container">
+    <menu>  
+        <div class="grid-container-productos">
+        <section>
+                <br>
+                <div class="grid-item"><h3 class="titulo-de-section">Cervezas</h3></div>
+                <div class="grid-item-b">
+            <div class="productos_container" id="cervezas">
                 <div class="productos centrado">
                     <img src="https://th.bing.com/th/id/OIP.HYs-XtjmUKb_P9J7xlv7dgHaHa?rs=1&pid=ImgDetMain" alt="dados">
                     <h3>Cerveza corona 355ml</h3>
@@ -54,10 +57,12 @@
                     <button class="btn-comprar-productos">Comprar</button>
                 </div>
             </div>
+        </div>
         </section>
         <section>
-            <h3 class="titulo-de-section">Vinos y gaseosas</h3>
-            <div class="productos_container">
+            <div class="grid-item"><h3 class="titulo-de-section">Vinos y gaseosas</h3></div>
+            <div class="grid-item-b">
+            <div class="productos_container" id="vinos">
                 <div class="productos centrado">
                     <img src="https://cepadevinos.com/wp-content/uploads/2017/07/Alma_Mora_Malbec_yecm1n.jpg" alt="dados">
                     <h3>Vino Alma mora </h3>
@@ -82,7 +87,7 @@
                     <span>$2100</span>
                     <button class="btn-comprar-productos">Comprar</button>
                 </div>
-                <div class="productos centrado">
+                <div class="productos centrado" id="tragos">
                     <img src="https://oechsle.vteximg.com.br/arquivos/ids/1352351-1500-1500/image-282b8bc76b124a2890fb0c95b901ee1b.jpg?v=637123966221200000" alt="dados">
                     <h3>Pepsi cola 480ml</h3>
                     <span>$1800</span>
@@ -107,10 +112,12 @@
                     <button class="btn-comprar-productos">Comprar</button>
                 </div>
             </div>
+            </div>
         </section>
         <section>
-            <h3 class="titulo-de-section">Comidas</h3>
-            <div class="productos_container ">
+            <div class="grid-item"><h3 class="titulo-de-section">Comidas</h3></div>
+            <div class="grid-item-b">
+            <div class="productos_container" id="comidas">
                 <div class="productos centrado">
                     <img src="https://img.cuisineaz.com/400x400/2013/12/20/i18445-margherite.jpeg" alt="dados">
                     <h3>Pizza napolitana 8 porciones </h3>
@@ -136,8 +143,9 @@
                     <button class="btn-comprar-productos">Comprar</button>
                 </div>
             </div>
-           
+            </div>
         </section>
+    </div>
     </menu>
 
     <footer>
