@@ -14,8 +14,7 @@ html
 nav{
     font-size: 15px;
     background-color: #001815;
-    font-family: "Manrope";
-    
+    font-family: "Manrope";  
 }
 
 .navbar-toggler-icon {
@@ -52,7 +51,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    
 }
 
 header {
@@ -60,7 +58,6 @@ header {
     height: auto; /* Ajusta la altura según tus necesidades */
     width: 100%;
     position: relative; /* Para posicionar el div de la imagen */
-    ;
 }
 
 .header-imagen {
@@ -75,21 +72,26 @@ header {
 }
 
 .btn-verProductos {
-    background-color: #000; 
+    background-color: #987554; 
     color: white;
-    padding: 15px 32px;
+    padding: 10px 32px;
     text-decoration: none;
     display: block;
     font-size: 20px;
     border-radius: 15px;
+    width: 890px;
+    font-weight: bold;
 }
 
 header h1, header h2 {
     text-align: center;
 }
 
+h3{
+    padding-bottom: 10px;
+}
+
 footer {
-    background-color: #001815;
     color: #fff;
     bottom: 0;
     margin-top: 2rem;
@@ -99,11 +101,10 @@ footer {
     text-align: center;
     margin: 0 auto;
 }
-.centrado-img {
+.centrado img {
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;  
 }
 
 .section-calendar{
@@ -131,17 +132,17 @@ footer {
     color: #fff;
 }
 .fa-facebook:hover{
-    color: #987554;
+    color: #001815;
     animation: heartBeat;
     animation-duration: 1s;
 }
 .fa-instagram:hover{
-    color: #987554;
+    color: #001815;
     animation: heartBeat;
     animation-duration: 1s;
 }
 .fa-twitter:hover{
-    color: #987554;
+    color: #001815;
     animation: heartBeat;
     animation-duration: 1s;
 }
@@ -150,27 +151,65 @@ footer {
 
 .boton{
     transition: transform 0.3s; /* Transición suave */
-  }
+}
   
 .boton:hover{
-    transform: scale(1.010); /* Aumentar el tamaño en un 10% */
-  }
+    transform: scale(1.05); /*Aumentar el tamaño en un 5% */
+}
+
+.btn-circular {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden;
+    margin: 1rem;
+}
+.btn-circular img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto auto auto auto; 
+    grid-template-rows: repeat(3, auto); 
     row-gap: 1rem;
 }
 
+.grid-conteiner1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(3, auto); 
+    row-gap: 0;
+}
+
 .grid-item {
+    display: grid;
+    align-items: center;
     background-color: #001815;
-    padding: 1rem;
+    padding: 0.5rem;
     color: #fff;
 }
 
 .grid-item-b {
     padding: 1rem;
+    color: #fff;
+}
+
+.grid-item-c {
+    display: grid;
+    align-items: center;
+    padding-bottom: 1rem;
+    background-color: #001815;
+    color: #fff;
+}
+.grid-item-d {
+    padding-top: 1rem;
+    background-color: #001815;
     color: #fff;
 }
 
@@ -202,7 +241,7 @@ footer {
     height: auto;
 }
 .formulario-container{
-    background-color: rgb(119, 106, 106);
+    background-color: #001815;
     display: flex;
     flex-direction: column;
     font-family: "Manrope";
@@ -214,7 +253,7 @@ footer {
     gap: 1rem;
     height: 100%;
     padding: 1rem;
-    border: solid 10px #4a4f47;
+    border: solid 10px #162b09;
 }
 .label-formulario{
     font-size: 1.5rem;
@@ -245,14 +284,14 @@ footer {
     padding: 10px;
     border: none;
     border-radius: 3px;
-    background-color: #000;
+    background-color: #162b09;
     color: #fff;
     font-size: 1.05rem;
     cursor: pointer;
 }
 .btn-enviar:hover{
     background-color: #f6f6f6;
-    color: #000;
+    color: #001815;
     transition: all 0.5s;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.759);
 }
@@ -301,11 +340,9 @@ img {
 
 .titulo-de-section{
     margin-left: 1rem;
-    font-size: 1.5rem;
     margin-top: 1rem;
     text-decoration: underline;
 }
-
 
 /* login*/
 input
@@ -313,7 +350,7 @@ input
     width: 100%;
     box-sizing: border-box;
     padding: 6px 12px;
-    border: 1px solid #000;
+    border: 1px solid #001815;
     box-shadow: 0px 0px 15px #0001;
 }
 
@@ -337,12 +374,13 @@ h3
 p
 {
     text-align: center;
+    font-size: 1.3em;
 }
 
 form
 {
     margin-bottom: 100px;
-    background-color: #000;
+    background-color: #001815;
     padding: 20px 0;
     max-width: 600px;
     margin: auto;
