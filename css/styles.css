@@ -190,6 +190,7 @@ footer {
 .grid-item {
     display: grid;
     align-items: center;
+    justify-items: center;
     background-color: #001815;
     padding: 0.5rem;
     color: #fff;
@@ -402,7 +403,17 @@ form
 .form_input > input:focus{
     outline: none;
 }
-
+.fix-center{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.fix-g-item{
+    margin: 20px;
+    border-radius: 10px;
+}
 @media screen and (max-width:767px)
 {
     .form_login
