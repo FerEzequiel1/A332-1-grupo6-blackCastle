@@ -212,39 +212,7 @@ footer {
     background-color: #001815;
     color: #fff;
 }
-@media screen and (max-width:768px){
-    .grid-container {
-        display: flex;
-        flex-direction: column;
-    }
-    .grid-item{
-        display: flex;
-        flex-direction: column;
-    }
-    .centrado{
-        width: 100%;
-    }
-    .section-calendar{
-        margin: 5px;
-    }
 
-    .grid-conteiner1 {
-        display: flex;
-        flex-direction: column;
-
-    }
-    .grid-item-c > p{
-        margin: 16px;
-        padding: 10px;
-        font-size: 20px;
-        font-weight: 600;
-        background-color: #fff;
-        color: #001815;
-        border-radius: 10px;
-        
-    }
-
-}
 
 .full-width {
     grid-column: span 2;
@@ -419,11 +387,20 @@ form
     margin: auto;
     box-shadow: 0px 0px 35px #0006;
     margin-top: 25px;
+    border-radius:15px;
 }
 
 .form_input
 {
     padding: 8px 20px;
+}
+.form_input > input{
+    border-radius: 5px;
+    border: 1px solid #001815;
+    box-shadow: 0px 0px 15px #0001;
+}
+.form_input > input:focus{
+    outline: none;
 }
 
 @media screen and (max-width:767px)
@@ -431,7 +408,7 @@ form
     .form_login
     {
         height: auto;
-        width: 450px;
+        width: 90%;
     }
     .formulario-container{
         height: auto;
@@ -456,5 +433,51 @@ form
         height: auto;
         width: 975px;
     }
+
+}
+
+@media screen and (max-width:768px){
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .centrado{
+        width: 100%;
+    }
+    .section-calendar{
+        margin: 5px;
+    }
+
+    .grid-conteiner1 {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .grid-item-c > p{
+        margin: 16px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #fff;
+        color: #001815;
+        border-radius: 10px;
+        
+    }
+
+    .grid-container-us{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-item-b{
+        width: 100%;
+    }
+    .grid-item-b > img{
+        max-width: 100%;
+    }
+    
 
 }
