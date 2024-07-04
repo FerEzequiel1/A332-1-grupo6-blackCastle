@@ -297,7 +297,12 @@ footer {
     transition: all 0.5s;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.759);
 }
-
+.ul-fix{
+    line-height: 45px; 
+}
+.ul-fix>li>p{
+    margin: 4px;
+}
 /* productos*/
 
 .grid-container-productos{
@@ -328,12 +333,33 @@ footer {
 
 .btn-comprar-productos{
     border-radius: 10px;
-    padding: 3px;
+    padding: 10px;
+    background-color: #987554;
+    color: #fff;
     cursor: pointer;
+    transition: all 400ms;
+    border: none;
+}
+.card-text > p{
+    text-align: none;
+    font-size: default;
+}
+.card{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #001815;
+    color: #fff;
+    transition: all 400ms;
+}
+.card a{
+    text-decoration: none;
 }
 
 .btn-comprar-productos:hover {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #f6f6f6;
+    color: #001815;
+    transition: all 400ms;
+   
 }
 img {
     max-height: 340px;
@@ -347,7 +373,7 @@ img {
 }
 
 /* login*/
-input
+.input_login
 {
     width: 100%;
     box-sizing: border-box;
@@ -356,7 +382,7 @@ input
     box-shadow: 0px 0px 15px #0001;
 }
 
-h2
+.h2_imput
 {
     text-align: center;
     color: white;
@@ -368,18 +394,18 @@ h2
     padding: 10px;
 }
 
-h3
+.h3_center
 {
     text-align: center;
 }
 
-p
+.pselect
 {
     text-align: center;
     font-size: 1.3em;
 }
 
-form
+.form_login
 {
     margin-bottom: 100px;
     background-color: #001815;
