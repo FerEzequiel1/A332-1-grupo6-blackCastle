@@ -31,8 +31,45 @@
                     </ul>
                 </div>
                
+                <div class="container-icon" id>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                  </svg>
+                </div>
+
+                <div class="count-products">
+                  <span id="contador-productos">0</span>
+                </div>
+
+                <div class="container-cart-products hidden-cart">
+                  <div class="columna-productos">
+                    <div class="cart-product">
+                      <div class="info-cart-product">
+                        <span class="cantidad-producto-carrito"></span>
+                        <span class="titulo-producto-carrito"></span>
+                        <span class="precio-producto-carrito"></span>
+                      </div>
+  
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                      </svg>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="card-total">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$20</span>
+                  </div>
+                </div>
+
+
             </div>
         </nav>
+
+        
+
         <h1>BLACK CASTLE</h1>
         <h2>MENU</h2> 
         <br> 
@@ -346,6 +383,6 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
-
+<script src="js/carrito.js"></script>
 
 </html>
