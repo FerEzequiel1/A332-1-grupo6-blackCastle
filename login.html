@@ -1,64 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black castle bar</title>
+    <link rel="icon" href="./imagenes/blackCastle.ico">
     <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
-    
 </head>
 
 <body> 
-    <header> 
-        <nav>  
-            <div>
-                <a href="about.html">Sobre nosotros</a>
-                <a href="contacto.html">Contactanos</a>
-                <a href="index.html">Home</a>
+    <header class="header">
+        <div class="header-imagen"></div> <!-- Contenedor de la imagen de fondo -->
+        <nav class="navbar navbar-expand-lg">
+            <div class=" container-fluid m-2 p-3 ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item m-2"><a href="index.html" class="m-1 text-decoration-none">Home</a></li>
+                        <li class="nav-item m-2"><a href="about.html" class="m-1 text-decoration-none">Sobre nosotros</a></li>
+                        <li class="nav-item m-2"><a href="index.html#ubicacion" class="m-1 text-decoration-none">Ubicacion</a></li>
+                        <li class="nav-item m-2"><a href="contacto.html" class="m-1 text-decoration-none">Contactanos</a></li>
+                        <li class="nav-item m-2"><a href="login.html" class="m-1 text-decoration-none">Crear cuenta</a></li>
+                    </ul>
+                </div>
+               
             </div>
         </nav>
         
         <h1>BLACK CASTLE</h1>
-        <h2>El mejor bar de la Argentina</h2>  
+        <h2 class="h2_imput">El mejor bar de la Argentina</h2>  
     </header>
-    <form class="form_login">
-        <h2>Inicio Sesion</h2>
+    <form class="form_login center" id="formulario">
+        <h2 class="h2_imput">Inicio Sesion</h2>
         <div class="form_input">
-            <input type="text" placeholder="nombre de usuario">
+            <label for="usuario"> nombre de usuario</label>
+            <input id="usuario" type="text" class="input_login" placeholder="nombre de usuario">
+            <p></p>
         </div>
         <div class="form_input">
-            <input type="email" placeholder="email">
+            <label for="email">email</label>
+            <input id="email" type="email" class="input_login" placeholder="email">
+            <p></p>
         </div>
         <div class="form_input">
-            <input type="password" placeholder="contraseña">
+            <label for="pass">contraseña</label>
+            <input id="pass" type="password" class="input_login" placeholder="contraseña">
+            <p></p>
         </div>
         <div class="form_input">
-            <input type="password" placeholder="reescriba la contraseña">
+            <label for="passConfirma">reescriba la contraseña</label>
+            <input id="passConfirma" type="password" class="input_login" placeholder="reescriba la contraseña">
+            <p></p>
         </div>
         <div class="form_input">
-            <input type="submit">
+            <input type="submit"  class="input_login">
         </div>
-     </form>
-    <footer >
+    </form>
+    <footer>
+        <div class="centrado">
+            <p class="pselect">todos los derechos reservados 2024</p>  
+        </div> 
         
-        <p>todos los derechos reservados 2024</p>
-        
-        </a> 
+        <div class="social-icons">
         <a href="https://www.facebook.com" target="_blank">
-        <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
         </a> 
         <a href="https://www.twitter.com" target="_blank">
             <i class="fa fa-twitter" aria-hidden="true"></i>
         </a> 
         <a href="https://www.instagram.com" target="_blank">
             <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a> 
-        <br><br>
-        Contactate con nosotros en nuestras redes sociales!
+        </a>
+        </div> 
+        
+        <div class="centrado">Contactate con nosotros en nuestras redes sociales!</div>
     </footer>
 </body>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+<script src="js/login.js"></script>
 
 </html>
