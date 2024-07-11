@@ -8,7 +8,7 @@ window.addEventListener('load', ()=> {
         if(form)
         {
             form.addEventListener('submit', e => {
-                //e.preventDefault();
+                e.preventDefault();
                 validaCampos();
             })
         }
@@ -57,7 +57,7 @@ window.addEventListener('load', ()=> {
          //validando campo mensaje
         if(!mensajeValor){
             validado = false;
-            validaFalla(mensaje, '')
+            validaFalla(mensaje, 'campo vacio')
         } 
         else {
             validaOk(mensaje)
