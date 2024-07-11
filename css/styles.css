@@ -496,6 +496,10 @@ footer {
     background-color: #f6f6f6;
     color: #001815;
     transition: all 400ms;
+<<<<<<< HEAD
+=======
+   
+>>>>>>> da279c2ce5e734ea45d42283ae3a83edbd2c171d
 }
 img {
     max-height: 340px;
@@ -557,6 +561,7 @@ img {
 {
     padding: 8px 20px;
 }
+<<<<<<< HEAD
 .form_input label {
     display: inline-block;
     margin-bottom: 7px;
@@ -565,6 +570,9 @@ img {
 }
 
 /*.form_input > input{
+=======
+.form_input > input{
+>>>>>>> da279c2ce5e734ea45d42283ae3a83edbd2c171d
     border-radius: 5px;
     border: 1px solid #001815;
     box-shadow: 0px 0px 15px #0001;
@@ -572,6 +580,7 @@ img {
 .form_input > input:focus{
     outline: none;
 }
+<<<<<<< HEAD
     */
 .form_input.ok input {
     border: 0.1px solid;
@@ -596,6 +605,8 @@ img {
     color:#e74c3c;
 }
 
+=======
+>>>>>>> da279c2ce5e734ea45d42283ae3a83edbd2c171d
 .fix-center{
     display: flex;
     flex-direction: column;
