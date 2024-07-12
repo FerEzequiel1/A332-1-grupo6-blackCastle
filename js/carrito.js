@@ -27,7 +27,7 @@ listaProductos.forEach(producto => {
             }
 
             const existe = productos.some(producto => producto.titulo === infoProducto.titulo)
-            console.log(existe);
+            //console.log(existe);
             if(existe){
                 const p = productos.map(producto =>{
                     if(producto.titulo === infoProducto.titulo){
