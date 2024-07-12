@@ -1,6 +1,10 @@
 const alertaDeCompra = document.querySelectorAll(".btn-comprar-productos");
 const sonido = document.querySelector("#sonido");
 
+const btnComprarFinal = document.querySelector("#btn-comprar-final");
+
+
+
 alertaDeCompra.forEach(btn => {
     btn.addEventListener("click",()=>{
 
@@ -23,4 +27,14 @@ alertaDeCompra.forEach(btn => {
     sonido.innerHTML = '<audio src="../recursos/check.mp3" autoplay> </audio>';
     })
 
+});
+
+btnComprarFinal.addEventListener("click",() =>{
+ 
+  Swal.fire({
+    title: 'Aprobado',
+    text: 'Muchas gracias,su compra fue aceptada correctamente',
+    icon: 'success',
+    confirmButtonText: 'Ok'
+  })
 });

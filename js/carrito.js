@@ -1,8 +1,13 @@
 const btnCart = document.querySelector('.container-icon');
 const containerCartProducts = document.querySelector('.container-cart-products');
 
+const btnComprar = document.querySelector("#btn-comprar-final");
+
 btnCart.addEventListener('click', () => {
     containerCartProducts.classList.toggle('hidden-cart');
+    if (containerCartProducts.style.display === "none") {
+        containerCartProducts.style.display = "block";
+    }
 });
 
 const cartInfo = document.querySelector(".card");
@@ -15,6 +20,7 @@ let valorTotal = document.querySelector(".total-pagar")
 const contadorProductos = document.querySelector("#contador-productos")
 
 listaProductos.forEach(producto => {
+
     producto.addEventListener("click", e => {
         if(e.target.classList.contains("btn-comprar-productos")){
             let producto = e.target.parentElement.parentElement;
@@ -56,6 +62,10 @@ const mostrarHTML = () =>{
     let total = 0;
     let cantidadProductos = 0;
 
+    if (productos.length === 0) {
+        containerCartProducts.style.display = "none";
+    }
+    
     productos.forEach(producto=>{
         const containerProducto = document.createElement("div");
         containerProducto.classList.add("cart-product");
@@ -84,13 +94,23 @@ const mostrarHTML = () =>{
 columaProductos.addEventListener('click', e => {
 	if (e.target.classList.contains('icon-close')) {
 		const product = e.target.parentElement;
-        
+        console.log(productos);
 		const titulo = product.querySelector('.info-cart-product').querySelector('.titulo-producto-carrito').textContent;
         console.log(titulo);
 		productos = productos.filter(
 			product => product.titulo !== titulo
 		);
         
-		mostrarHTML();
+        console.log(productos);
+
+        mostrarHTML();
+        
 	}
 });
+
+btnComprar.addEventListener('click',e => {
+
+    productos = [];
+    containerCartProducts.style.display = "none";
+    mostrarHTML();
+})
